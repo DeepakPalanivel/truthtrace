@@ -1,4 +1,4 @@
-import { Shield, Layers, GitBranch, BarChart2, Info, AlertTriangle, Code } from 'lucide-react';
+import { Shield, Layers, GitBranch, BarChart2, Info, AlertTriangle, Code, Mail, Github, Linkedin, User } from 'lucide-react';
 
 const methodology = [
   {
@@ -162,7 +162,7 @@ export default function AboutPage() {
 
       {/* Future */}
       <h2 className="text-xl font-bold text-white mb-4">Future Improvements</h2>
-      <div className="card p-5 rounded-xl">
+      <div className="card p-5 rounded-xl mb-8">
         <ul className="space-y-1.5">
           {[
             'Live evidence retrieval via search APIs (Serper, Google Search)',
@@ -181,7 +181,58 @@ export default function AboutPage() {
           ))}
         </ul>
       </div>
+
+      {/* Developer */}
+      <h2 className="text-xl font-bold text-white mb-4">Developer</h2>
+      <div className="card p-6 rounded-xl bg-gradient-to-br from-blue-600/10 to-slate-800/50 border border-blue-500/20">
+        <div className="flex flex-col sm:flex-row items-start sm:items-center gap-5">
+          {/* Avatar */}
+          <div className="w-16 h-16 rounded-full bg-blue-600/20 border-2 border-blue-500/40 flex items-center justify-center shrink-0">
+            <User size={28} className="text-blue-400" />
+          </div>
+
+          {/* Info */}
+          <div className="flex-1 min-w-0">
+            <h3 className="text-lg font-bold text-white">Deepak Palanivel</h3>
+            <p className="text-slate-400 text-sm mt-1">
+              Built NewzaX as a hackathon project — an AI-powered fake news intelligence system with explainable verdicts, claim-level analysis, and real evidence retrieval.
+            </p>
+
+            {/* Links */}
+            <div className="flex flex-wrap gap-3 mt-4">
+              <a
+                href="mailto:p.deepak.2826@gmail.com"
+                className="flex items-center gap-2 px-3 py-1.5 bg-slate-800 hover:bg-slate-700 rounded-lg text-xs text-slate-300 hover:text-white transition-colors"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Mail size={13} className="text-blue-400" />
+                p.deepak.2826@gmail.com
+              </a>
+
+              <a
+                href="https://github.com/DeepakPalanivel"
+                className="flex items-center gap-2 px-3 py-1.5 bg-slate-800 hover:bg-slate-700 rounded-lg text-xs text-slate-300 hover:text-white transition-colors"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Github size={13} className="text-blue-400" />
+                DeepakPalanivel
+              </a>
+
+              <a
+                href="https://www.linkedin.com/in/deepak-p-8b3333351/"
+                className="flex items-center gap-2 px-3 py-1.5 bg-slate-800 hover:bg-slate-700 rounded-lg text-xs text-slate-300 hover:text-white transition-colors"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Linkedin size={13} className="text-blue-400" />
+                deepak-p-8b3333351
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
-
