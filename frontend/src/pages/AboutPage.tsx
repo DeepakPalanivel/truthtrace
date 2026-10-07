@@ -4,7 +4,7 @@ const methodology = [
   {
     icon: Layers,
     title: 'Claim Extraction',
-    desc: 'TruthTrace isolates individual factual statements from article text, rather than treating an entire article as a single unit. This enables targeted verification.',
+    desc: 'NewzaX isolates individual factual statements from article text, rather than treating an entire article as a single unit. This enables targeted verification.',
   },
   {
     icon: Shield,
@@ -24,7 +24,7 @@ const methodology = [
   {
     icon: GitBranch,
     title: 'News DNA',
-    desc: 'TruthTrace attempts to model the information propagation path from original claim to viral spread. When data is unavailable, paths are clearly labeled as illustrative.',
+    desc: 'NewzaX attempts to model the information propagation path from original claim to viral spread. When data is unavailable, paths are clearly labeled as illustrative.',
   },
 ];
 
@@ -37,22 +37,22 @@ const scoringFactors = [
 ];
 
 const limitations = [
-  'TruthTrace cannot access all internet sources. Evidence retrieval is limited by available APIs.',
+  'NewzaX cannot access all internet sources. Evidence retrieval is limited by available APIs.',
   'AI claim extraction is not perfect. Complex or subtle claims may be missed or misrepresented.',
   'Source credibility scoring is heuristic. A high score does not guarantee accuracy.',
   'Context analysis cannot detect sophisticated misinformation that uses real sources with subtle modifications.',
   'Language analysis is not a reliable indicator of truth or falsehood by itself.',
   'Demo mode uses synthetic data and does not reflect real-world analysis.',
-  'TruthTrace should be used as one tool among many — always verify through multiple trusted sources.',
+  'NewzaX should be used as one tool among many — always verify through multiple trusted sources.',
 ];
 
 export default function AboutPage() {
   return (
     <div className="max-w-4xl mx-auto px-4 sm:px-6 py-10 animate-slide-up">
       <div className="text-center mb-12">
-        <h1 className="text-2xl sm:text-3xl font-bold text-white mb-3">About TruthTrace</h1>
+        <h1 className="text-2xl sm:text-3xl font-bold text-white mb-3">About NewzaX</h1>
         <p className="text-slate-400 max-w-2xl mx-auto">
-          TruthTrace is an explainable fake news intelligence system. It doesn't just tell you what to believe — it shows you the evidence, the reasoning, and the limitations behind every verdict.
+          NewzaX is an explainable fake news intelligence system. It doesn't just tell you what to believe — it shows you the evidence, the reasoning, and the limitations behind every verdict.
         </p>
       </div>
 
@@ -60,7 +60,7 @@ export default function AboutPage() {
       <div className="card p-6 rounded-xl mb-6 bg-blue-600/5 border border-blue-500/20">
         <h2 className="text-lg font-bold text-white mb-2">The Core Differentiator</h2>
         <p className="text-slate-300 text-sm leading-relaxed">
-          Most fake-news classifiers produce a single binary label (Real/Fake) with a confidence percentage and no explanation. TruthTrace takes a fundamentally different approach:
+          Most fake-news classifiers produce a single binary label (Real/Fake) with a confidence percentage and no explanation. NewzaX takes a fundamentally different approach:
         </p>
         <ul className="mt-3 space-y-1.5">
           {[
@@ -184,3 +184,4 @@ export default function AboutPage() {
     </div>
   );
 }
+

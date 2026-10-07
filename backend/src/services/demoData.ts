@@ -635,3 +635,4 @@ function completedSteps() {
     { step: 'report', label: 'Generating explanation', status: 'done' as const },
   ];
 }
+

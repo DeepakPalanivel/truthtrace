@@ -12,7 +12,7 @@ export default function ExplanationPanel({ analysis }: Props) {
     <div className="card p-5 rounded-xl h-full flex flex-col">
       <div className="flex items-center gap-2 mb-4">
         <Lightbulb size={15} className="text-yellow-400" />
-        <p className="section-title">Why did TruthTrace reach this verdict?</p>
+        <p className="section-title">Why did NewzaX reach this verdict?</p>
       </div>
 
       <div className="space-y-2 flex-1">
@@ -35,3 +35,4 @@ export default function ExplanationPanel({ analysis }: Props) {
     </div>
   );
 }
+

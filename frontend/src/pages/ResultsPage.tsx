@@ -322,7 +322,7 @@ export default function ResultsPage() {
       {/* ── Disclaimer ───────────────────────────────────────────────── */}
       <div className="card p-4 rounded-xl mb-6 bg-slate-900/60 border-slate-800">
         <p className="text-xs text-slate-500 text-center leading-relaxed">
-          TruthTrace provides AI-assisted analysis to support — not replace — human judgment.
+          NewzaX provides AI-assisted analysis to support — not replace — human judgment.
           Verdicts are probabilistic estimates based on available signals.
           Always verify important claims through multiple trusted sources.
         </p>
@@ -344,3 +344,4 @@ export default function ResultsPage() {
     </div>
   );
 }
+

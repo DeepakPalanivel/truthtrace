@@ -47,7 +47,7 @@ app.get('/health', (_req, res) => {
   res.json({
     status: 'ok',
     version: '1.2.0',
-    service: 'TruthTrace API',
+    service: 'NewzaX API',
     search: { provider: searchStatus.provider, available: searchStatus.available, label: searchStatus.label },
     ai: { configured: !!(process.env.OPENAI_API_KEY || process.env.GROQ_API_KEY) },
   });
@@ -67,7 +67,7 @@ async function start() {
 
   app.listen(PORT, () => {
     const searchStatus = getSearchStatus();
-    console.log(`\n🔍 TruthTrace API running on http://localhost:${PORT}`);
+    console.log(`\n🔍 NewzaX API running on http://localhost:${PORT}`);
     console.log(`   Health: http://localhost:${PORT}/health`);
     console.log(`   Mode: ${process.env.NODE_ENV || 'development'}`);
     console.log(`   AI: ${(process.env.OPENAI_API_KEY || process.env.GROQ_API_KEY) ? 'Configured' : 'Not configured (heuristic fallback)'}`);

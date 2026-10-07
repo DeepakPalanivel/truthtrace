@@ -207,3 +207,4 @@ function HistoryCard({ item }: { item: AnalysisHistoryItem }) {
     </Link>
   );
 }
+

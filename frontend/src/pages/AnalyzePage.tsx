@@ -287,7 +287,7 @@ export default function AnalyzePage() {
                 disabled={loading}
               />
               <p className="text-xs text-slate-500 mt-2">
-                TruthTrace will fetch and extract the article content. Works best with news articles.
+                NewzaX will fetch and extract the article content. Works best with news articles.
               </p>
             </div>
           )}
@@ -382,3 +382,4 @@ export default function AnalyzePage() {
     </div>
   );
 }
+

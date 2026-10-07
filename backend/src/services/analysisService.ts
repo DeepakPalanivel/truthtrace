@@ -1,5 +1,5 @@
 /**
- * TruthTrace Analysis Service — v1.3
+ * NewzaX Analysis Service — v1.3
  *
  * AI Investigation Pipeline:
  *   Input
@@ -36,7 +36,7 @@ const ANALYSIS_VERSION = '1.3';
 async function extractFromUrl(url: string): Promise<{ title: string; text: string; domain: string }> {
   const response = await axios.get(url, {
     timeout: 10000,
-    headers: { 'User-Agent': 'Mozilla/5.0 (compatible; TruthTrace/1.0)' },
+    headers: { 'User-Agent': 'Mozilla/5.0 (compatible; NewzaX/1.0)' },
   });
   const $ = cheerio.load(response.data as string);
   $('script, style, nav, footer, header, aside, .ad').remove();
@@ -301,7 +301,7 @@ function buildNewsDNA(text: string, url?: string): NewsDNA {
   });
   nodes.push({
     id: 'n2', type: 'PUBLISHED_ARTICLE', label: 'AI Investigation',
-    description: 'Analyzed by TruthTrace AI investigation pipeline',
+    description: 'Analyzed by NewzaX AI investigation pipeline',
     date: new Date().toISOString().split('T')[0], isSimulated: false,
   });
   links.push({ source: 'n1', target: 'n2', relationship: 'PUBLISHED' });
@@ -561,3 +561,4 @@ export function getHistory() {
     verdict: r.verdict, isDemo: r.is_demo, createdAt: r.created_at,
   }));
 }
+

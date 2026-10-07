@@ -9,9 +9,9 @@ export default function Layout() {
         <Outlet />
       </main>
       <footer className="border-t border-slate-800 py-6 text-center text-slate-500 text-sm">
-        <p>TruthTrace — Explainable Fake News Intelligence System</p>
+        <p>NewzaX — Explainable Fake News Intelligence System</p>
         <p className="mt-1 text-xs text-slate-600">
-          TruthTrace does not guarantee accuracy. Always verify important claims through multiple trusted sources.
+          NewzaX does not guarantee accuracy. Always verify important claims through multiple trusted sources.
         </p>
       </footer>
     </div>

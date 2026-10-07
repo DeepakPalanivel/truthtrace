@@ -18,12 +18,12 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <Link to="/" className="flex items-center gap-2.5 group" aria-label="TruthTrace Home">
+          <Link to="/" className="flex items-center gap-2.5 group" aria-label="NewzaX Home">
             <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center group-hover:bg-blue-500 transition-colors">
               <ScanSearch className="w-4.5 h-4.5 text-white" size={18} />
             </div>
             <span className="text-lg font-bold text-white tracking-tight">
-              Truth<span className="text-blue-400">Trace</span>
+              Newza<span className="text-blue-400">X</span>
             </span>
           </Link>
 

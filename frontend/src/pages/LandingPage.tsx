@@ -17,7 +17,7 @@ const differentiators = [
   { label: 'Claim-level analysis', desc: 'Not just one verdict — each claim is evaluated independently' },
   { label: 'News DNA', desc: 'Visualize how information propagated from origin to viral claim' },
   { label: 'Context Detection', desc: 'Identify old media repurposed for new false claims' },
-  { label: 'Explainable verdicts', desc: 'Every result shows exactly why TruthTrace reached that conclusion' },
+  { label: 'Explainable verdicts', desc: 'Every result shows exactly why NewzaX reached that conclusion' },
   { label: 'Evidence trail', desc: 'Supporting and contradicting sources for every claim' },
   { label: 'No black box', desc: 'All scoring factors are documented and transparent' },
 ];
@@ -72,7 +72,7 @@ export default function LandingPage() {
             <span className="text-blue-400">Trace the truth.</span>
           </h1>
           <p className="text-lg sm:text-xl text-slate-400 max-w-2xl mx-auto mb-8 leading-relaxed">
-            TruthTrace doesn't just label news real or fake. It extracts individual claims, traces evidence, evaluates source credibility, detects context manipulation, and delivers an explainable verdict — so you understand <em>why</em>.
+            NewzaX doesn't just label news real or fake. It extracts individual claims, traces evidence, evaluates source credibility, detects context manipulation, and delivers an explainable verdict — so you understand <em>why</em>.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <Link
@@ -98,7 +98,7 @@ export default function LandingPage() {
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <p className="section-title mb-2">The Pipeline</p>
-            <h2 className="text-2xl sm:text-3xl font-bold text-white">How TruthTrace works</h2>
+            <h2 className="text-2xl sm:text-3xl font-bold text-white">How NewzaX works</h2>
           </div>
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4">
             {steps.map(({ icon: Icon, label, desc }, i) => (
@@ -118,10 +118,10 @@ export default function LandingPage() {
       <section className="py-16 border-t border-slate-800 bg-gradient-to-b from-transparent to-slate-900/30">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <p className="section-title mb-2">Why TruthTrace</p>
+            <p className="section-title mb-2">Why NewzaX</p>
             <h2 className="text-2xl sm:text-3xl font-bold text-white">Not another binary classifier</h2>
             <p className="text-slate-400 mt-3 max-w-xl mx-auto">
-              Every other fake-news tool tells you what to think. TruthTrace shows you the evidence and lets you verify it yourself.
+              Every other fake-news tool tells you what to think. NewzaX shows you the evidence and lets you verify it yourself.
             </p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -145,7 +145,7 @@ export default function LandingPage() {
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-10">
             <p className="section-title mb-2">Demo Cases</p>
-            <h2 className="text-2xl sm:text-3xl font-bold text-white">See TruthTrace in action</h2>
+            <h2 className="text-2xl sm:text-3xl font-bold text-white">See NewzaX in action</h2>
             <p className="text-slate-500 text-sm mt-2">These are labeled demo analyses — not real-world verdicts</p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
@@ -176,7 +176,7 @@ export default function LandingPage() {
           <h2 className="text-2xl sm:text-3xl font-bold text-white mb-4">
             Ready to trace the truth?
           </h2>
-          <p className="text-slate-400 mb-8">Paste an article, enter a URL, or type a headline. TruthTrace does the rest.</p>
+          <p className="text-slate-400 mb-8">Paste an article, enter a URL, or type a headline. NewzaX does the rest.</p>
           <Link
             to="/analyze"
             className="btn-primary inline-flex items-center gap-2 text-base px-8 py-3.5"
@@ -189,3 +189,4 @@ export default function LandingPage() {
     </div>
   );
 }
+

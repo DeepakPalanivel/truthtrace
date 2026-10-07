@@ -1,14 +1,14 @@
-# TruthTrace — Explainable Fake News Intelligence System
+# NewzaX — Explainable Fake News Intelligence System
 
 > Don't just detect fake news. Trace the truth.
 
-TruthTrace is not a binary fake/real classifier. It extracts individual claims, evaluates each against available evidence, checks source credibility, detects context manipulation, traces the information propagation path (News DNA), and produces a fully explainable verdict.
+NewzaX is not a binary fake/real classifier. It extracts individual claims, evaluates each against available evidence, checks source credibility, detects context manipulation, traces the information propagation path (News DNA), and produces a fully explainable verdict.
 
 ---
 
 ## Key Differentiator
 
-| Typical Classifier | TruthTrace |
+| Typical Classifier | NewzaX |
 |---|---|
 | One verdict for the whole article | Claim-level analysis |
 | Black box confidence score | Explainable scoring with 5 documented factors |
@@ -23,7 +23,7 @@ TruthTrace is not a binary fake/real classifier. It extracts individual claims, 
 
 - **Claim-level analysis** — individual factual claims are extracted and verified independently
 - **Truth Score** — 0–100 weighted score across 5 documented factors
-- **Explainable verdict** — every result explains why TruthTrace reached its conclusion
+- **Explainable verdict** — every result explains why NewzaX reached its conclusion
 - **Evidence trail** — supporting and contradicting sources for each claim
 - **Source credibility** — publisher, domain, author, citation, HTTPS signals
 - **Context check** — date mismatches, fabricated attribution, context manipulation
@@ -38,7 +38,7 @@ TruthTrace is not a binary fake/real classifier. It extracts individual claims, 
 ## Architecture
 
 ```
-truthtrace/
+NewzaX/
 ├── frontend/              # React + TypeScript + Tailwind CSS
 │   └── src/
 │       ├── pages/         # Landing, Analyze, Results, History, About
@@ -88,7 +88,7 @@ truthtrace/
 
 ```bash
 # Install all (backend + frontend)
-cd truthtrace
+cd NewzaX
 npm install
 npm run install:all
 ```
@@ -133,7 +133,7 @@ Open: http://localhost:5173
 
 PORT=5000
 NODE_ENV=development
-DB_PATH=./database/truthtrace.db
+DB_PATH=./database/NewzaX.db
 CORS_ORIGIN=http://localhost:5173
 
 # Optional: AI for live claim analysis (Demo Mode works without these)
@@ -157,7 +157,7 @@ GROQ_API_KEY=gsk_...          # Groq (free tier available at console.groq.com)
 
 ## Demo Mode
 
-TruthTrace includes 3 labeled demo cases that work without any API keys:
+NewzaX includes 3 labeled demo cases that work without any API keys:
 
 | Case | Verdict | Description |
 |---|---|---|
@@ -208,3 +208,4 @@ The Truth Score (0–100) is a weighted average of 5 independent factors:
 - Multi-language support
 - Browser extension for in-context analysis
 - Historical claim database
+

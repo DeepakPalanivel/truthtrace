@@ -9,7 +9,7 @@ import type { NewsAnalysis } from '../types/index';
 
 dotenv.config();
 
-const DB_DIR = path.resolve(process.env.DB_DIR || './database');
+const DB_DIR = path.resolve(process.env.DB_DIR || (process.env.NODE_ENV === 'production' ? '/tmp/truthtrace' : './database'));
 const DB_FILE = path.join(DB_DIR, 'analyses.json');
 
 interface DbSchema {
